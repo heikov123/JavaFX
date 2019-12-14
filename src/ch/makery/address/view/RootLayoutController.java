@@ -1,7 +1,6 @@
 package ch.makery.address.view;
 
 import java.io.File;
-
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
@@ -16,7 +15,6 @@ import ch.makery.address.MainApp;
  * @author Marco Jakob
  */
 public class RootLayoutController {
-
     // Reference to the main application
     private MainApp mainApp;
 
@@ -115,5 +113,13 @@ public class RootLayoutController {
     @FXML
     private void handleExit() {
         System.exit(0);
+    }
+    
+    /**
+     * Opens the birthday statistics.
+     */
+    @FXML
+    private void handleShowBirthdayStatistics() {
+      mainApp.showBirthdayStatistics();
     }
 }  
